@@ -1,3 +1,7 @@
 # FixLibraryStartup.patch
 #install-tjunittest.patch
 CVE-2020-13790.patch
+CVE-2020-17541.patch
+CVE-2020-35538.patch
+CVE-2020-35538-2.patch
+CVE-2021-46822.patch

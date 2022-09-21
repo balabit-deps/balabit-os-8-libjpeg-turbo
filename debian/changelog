@@ -1,3 +1,24 @@
+libjpeg-turbo (2.0.3-0ubuntu1.20.04.3) focal-security; urgency=medium
+
+  * SECURITY UPDATE: stack-based buffer overflow in the "transform"
+    component
+    - debian/patches/CVE-2020-17541.patch: fix very rare local buffer
+      overrun in jchuff.c.
+    - CVE-2020-17541
+  * SECURITY UPDATE: null pointer dereference
+    - debian/patches/CVE-2020-35538.patch: fix jpeg_skip_scanlines()
+      segfault w/merged upsamp in jdapistd.c, jdmerge.c, jdmerge.h,
+      jdmrg565.c, jdmrgext.c.
+    - debian/patches/CVE-2020-35538-2.patch: further jpeg_skip_scanlines()
+      fixes in CMakeLists.txt, croptest.in, jdapistd.c.
+    - CVE-2020-35538
+  * SECURITY UPDATE: heap-based buffer overflow
+    - debian/patches/CVE-2021-46822.patch: fix issues w/loading 16-bit
+      PPMs/PGMs in rdppm.c.
+    - CVE-2021-46822
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Sep 2022 13:54:13 -0400
+
 libjpeg-turbo (2.0.3-0ubuntu1.20.04.1) focal-security; urgency=medium
 
   * SECURITY UPDATE: Heap-based buffer over-read
